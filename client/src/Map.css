@@ -1,0 +1,28 @@
+/* BUTTONS */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons :nth-child(3) {
+  grid-column: span 2;
+}
+
+.buttons :only-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.button {
+  background: white;
+  border: 2px solid black;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+}
